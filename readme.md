@@ -3,7 +3,7 @@
 # Install
 rename settings.json.example to settings.json and enter your bot token
 ```bash
-npm install
+yarn install
 npm install -g ffmpeg-binaries
 pm2 start index.js
 ```
