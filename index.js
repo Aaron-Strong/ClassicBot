@@ -22,6 +22,8 @@ client.on("message", message => {
             .playFile("./classic.mp3")
             .on("end", () => {
               voiceChannel.leave();
+
+              process.exit();
             });
 
           dispatcher.on("error", e => {
@@ -48,6 +50,7 @@ client.on("message", message => {
 
           const dispatcher = connection.playFile("./int.mp3").on("end", () => {
             voiceChannel.leave();
+            process.exit();
           });
 
           dispatcher.on("error", e => {
