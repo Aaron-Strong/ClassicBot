@@ -60,4 +60,7 @@ client.on("message", message => {
       message.reply("Twat join a fucking voice channel");
     }
   }
+  if (message.content === "!fix") {
+    process.exit();
+  }
 });
